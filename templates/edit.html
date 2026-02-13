@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{% block title %} Edit/Delete Joke {% endblock %}</h1>
+<form method="post">
+    <p>
+        <label for="title">Topic</label>
+        <input type="text" name="title" placeholder="Topic">
+        </input>
+    </p>
+
+    <p>
+        <label for="author">Author</label>
+        <input type="text" name="author" placeholder="Author">
+        </input>
+    </p>
+
+    <p>
+        <label for="jokeText">JOKE:</label>
+        <br>
+        <textarea name="jokeText" placeholder="You joke" rows="15" cols="60"></textarea>
+    </p>
+    <p>
+        <button type="submit">PREVIOUS</button>
+        <button type="submit">SAVE</button>
+        <button type="submit">DELETE</button>
+        <button type="submit">NEXT</button>
+    </p>
+</form>
+{% endblock %}
